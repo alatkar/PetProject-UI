@@ -1,0 +1,69 @@
+<div class='main-nav'>
+    <div class='navbar navbar-inverse'>
+        <div class='navbar-header'>
+            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+                <span class='sr-only'>Toggle navigation</span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+            </button>
+            <a class='navbar-brand' [routerLink]="['/home']">PetProject</a>
+        </div>
+        <div class='clearfix'></div>
+        <div class='navbar-collapse collapse'>
+            <ul class='nav navbar-nav'>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/counter']"> <span class='glyphicon glyphicon-list'></span> Counter</a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/home']"><span class='glyphicon glyphicon-globe'></span> Home</a>
+                </li><br/>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/feed']">
+                        <span class='glyphicon glyphicon-baby-formula'></span> Feed
+                    </a>
+                </li><br/>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/profile']">
+                        <span class='glyphicon glyphicon-baby-formula'></span> Profile
+                    </a>
+                </li><br/>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/resources']">
+                        <span class='glyphicon glyphicon-education'></span> Resources
+                    </a>
+                </li><br/>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/tips']">
+                        <span class='glyphicon glyphicon-bell'></span> Tips/Tutorials
+                    </a>
+                </li>  <br/>              
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/products']">
+                        <span class='glyphicon glyphicon-knight'></span> Products
+                    </a>
+                </li><br/>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/services']">
+                        <span class='glyphicon glyphicon-sunglasses'></span> Services
+                    </a>
+                </li><br/>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/events']">
+                        <span class='glyphicon glyphicon-bell'></span> Events
+                    </a>
+                </li><br/>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/events']">
+                        <span class='glyphicon glyphicon-bell'></span> Whats happening near you
+                    </a>
+                </li><br/>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/recommend']">
+                        <span class='glyphicon glyphicon-bell'></span> Recommendations
+                    </a>
+                </li><br/>
+            </ul>
+        </div>
+    </div>
+</div>

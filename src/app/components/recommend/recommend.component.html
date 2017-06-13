@@ -1,0 +1,21 @@
+﻿<h1>Recommendations</h1>
+<p>This component demonstrates fetching data from the server.</p>
+<p *ngIf="!recos"><em>Loading...</em></p>
+<table class='table' *ngIf="recos">
+    <thead>
+        <tr>
+            <th>Message</th>
+            <th>Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let feed of recos">
+            <td>{{ feed.message }}</td>
+            <td>{{ feed.type }}</td>
+            <td>Atul</td>
+        </tr>
+    </tbody>
+</table>
+<a>Profiles you may be interested in</a><br/>
+<a>Products you may be interested in</a><br />
+<a>Services you may be interested in</a><br />

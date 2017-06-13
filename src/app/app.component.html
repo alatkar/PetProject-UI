@@ -1,0 +1,82 @@
+<!-- Top Menu  -->
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <a class="navbar-brand">Bugilga</a>
+            <ul class="nav navbar-nav" routerLinkActive="active">
+                <li class="nav-item"><a class="nav-link" routerLink="home">Products</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="about">Services</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="courses">Resources</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="courses">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="courses">About</a></li>
+            </ul>
+            <ul class="nav navbar-right" routerLinkActive="active">                
+                <li class="nav-item"><a class="nav-link" routerLink="about">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- Main Body  -->
+<div class="home-page">
+    <div class='container page'>
+
+        <div class="row">
+            <div class='col-md-1'>
+                <nav-menu></nav-menu>
+            </div>
+            <div class='col-sm-6 body-content'>
+                <router-outlet></router-outlet>
+            </div>
+
+            <div class='col-sm-3'>
+                <recommend></recommend>
+            </div>
+
+            <!-- Right Navigation Start-->
+            <!--
+            <div class="col-sm-3">
+                <div class="sidebar-module sidebar-module-inset">
+                    <h4>Mission</h4>
+                    <p><i>Whole new world for your loved one. Find all you need with peace of mind.</i></p>
+                </div>
+                <div class="sidebar-module">
+                    <h4>Today's Promotions</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="#">Petsmart OrganicGest 5% Off </a></li>
+                        <li><a href="#">Redmond Stylish Groomers $10 Off </a></li>
+                        <li><a href="#">PetPro Trainers BootCamp 15% Off</a></li>
+                        <li><a href="#"><b><i>Show more...</i></b></a></li>
+                    </ol>
+                </div>
+                <div class="sidebar-module">
+                    <h4>Featured Products</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="#">Marigold Dog Collar</a></li>
+                        <li><a href="#">DogProFit Workout Instruments</a></li>
+                        <li><a href="#">Homegrown feast: innovation in Pet Food</a></li>
+                        <li><a href="#"><b><i>Show more...</i></b></a></li>
+                    </ol>
+                </div>
+                <div class="sidebar-module">
+                    <h4>Featured Services</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="#">GoPro Dog Walkers</a></li>
+                        <li><a href="#">FriendMe Dog Kennel</a></li>
+                        <li><a href="#">BhoBho Trainer</a></li>
+                        <li><a href="#"><b><i>Show more...</i></b></a></li>
+                    </ol>
+                </div>
+                <div class="sidebar-module">
+                    <h4>NonProfit</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="#">GoPro Dog Walkers</a></li>
+                        <li><a href="#">FriendMe Dog Kennel</a></li>
+                        <li><a href="#">BhoBho Trainer</a></li>
+                        <li><a href="#"><b><i>Show more...</i></b></a></li>
+                    </ol>
+                </div>
+            </div>
+                -->
+            <!-- Right Navigation End-->
+        </div>       
+    </div>
+</div>
