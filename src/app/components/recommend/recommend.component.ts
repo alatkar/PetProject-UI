@@ -1,6 +1,7 @@
 ﻿import { Component } from '@angular/core';
 import { Http } from '@angular/http';
 import { Recommend } from '../../common/recommend';
+import { RecommendService } from '../../services/recommend.service';
 
 @Component({
     selector: 'recommend',
@@ -9,9 +10,14 @@ import { Recommend } from '../../common/recommend';
 export class RecommendComponent {
     public recos: Recommend[];
 
+
     constructor(http: Http) {
-        http.get('/api/recommend/').subscribe(result => {
+        http.get('http://localhost:60603/api/recommend/').subscribe(result => {
             this.recos = result.json();
         });
     }
+/*
+    constructor(private service: RecommendService) {        
+    }
+    */
 }

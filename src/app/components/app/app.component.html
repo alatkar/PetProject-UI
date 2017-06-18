@@ -1,29 +1,34 @@
+
 <!-- Top Menu  -->
-    <nav class="navbar navbar-fixed-top navbar-inverse">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <a class="navbar-brand">Bugilga</a>
-            <ul class="nav navbar-nav" routerLinkActive="active">
-                <li class="nav-item"><a class="nav-link" routerLink="home">Products</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="about">Services</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="courses">Resources</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="courses">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="courses">About</a></li>
-            </ul>
-            <ul class="nav navbar-right" routerLinkActive="active">                
-                <li class="nav-item"><a class="nav-link" routerLink="about">Login</a></li>
-            </ul>
+            <div class="navbar-header">
+                <a class="navbar-brand">Bugilga</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav" routerLinkActive="active">
+                    <li class="nav-item"><a class="nav-link" routerLink="home">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="about">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="courses">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="courses">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="courses">About</a></li>
+                </ul>
+                    <ul class="nav navbar-right" routerLinkActive="active">                
+                    <li class="nav-item"><a class="nav-link" routerLink="about">Login</a></li>
+                </ul>
+             </div>            
         </div>
     </nav>
-
 <!-- Main Body  -->
-<div class="home-page">
-    <div class='container page'>
 
+    
+<div class="container-fluid">
+    <div class="jumbotron">
         <div class="row">
-            <div class='col-md-1'>
+            <div class='col-sm-2'>
                 <nav-menu></nav-menu>
             </div>
-            <div class='col-sm-6 body-content'>
+            <div class='col-sm-7 body-content'>
                 <router-outlet></router-outlet>
             </div>
 

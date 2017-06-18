@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 //import { UniversalModule } from 'angular2-universal';
 import { AppComponent } from './app.component'
-import { NavMenuComponent } from './components/navmenu/navmenu.component';
-import { HomeComponent } from './components/home/home.component';
-import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
-import { CounterComponent } from './components/counter/counter.component';
-import { FeedComponent } from './components/feed/feed.component';
-import { RecommendComponent } from './components/recommend/recommend.component';
-import { ProfileComponent } from './components/profile/profile.component';
+import { NavMenuComponent } from '../navmenu/navmenu.component';
+import { HomeComponent } from '../home/home.component';
+import { FetchDataComponent } from '../fetchdata/fetchdata.component';
+import { CounterComponent } from '../counter/counter.component';
+import { FeedComponent } from '../feed/feed.component';
+import { RecommendComponent } from '../recommend/recommend.component';
+import { ProfileComponent } from '../profile/profile.component';
 // Imports for loading & configuring the in-memory web api
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from './mockapi/in-memory-data';
-import { FeedService } from './services/feed.service';
+import { InMemoryDataService } from '../../mockapi/in-memory-data';
+import { FeedService } from '../../services/feed.service';
 import { HttpModule } from '@angular/http';
 
 

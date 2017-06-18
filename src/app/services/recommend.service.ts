@@ -9,7 +9,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class RecommendService {
-    private profileUrl = 'api/recommend';  // URL to web api
+    private profileUrl = 'http://localhost:60603/api/recommend';  // URL to web api
     private profile: Profile;
     constructor(private http: Http) { }
 
